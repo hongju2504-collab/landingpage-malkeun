@@ -34,11 +34,11 @@ a {
     font-family: 'Pretendard';
 }
 
-.only414{
+.only414 {
     display: none;
 }
 
-.only1024{
+.only1024 {
     display: none;
 }
 
@@ -528,9 +528,9 @@ a {
 }
 
 .check-list p {
-    font-size: 18px;
+    font-size: 24px;
     color: var(--deep-navy);
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .recommend-footer {
@@ -999,8 +999,8 @@ a {
 
 /* 소형 모니터/태블릿 가로 (1024px) */
 @media (max-width: 1024px) {
-    
-    .only1024{
+
+    .only1024 {
         display: block;
     }
 
@@ -1032,9 +1032,7 @@ a {
     }
 
     /* kv sec */
-    .kv-sec {
-        height: 50vh;
-    }
+    
 
     .kv-info {
         display: none;
@@ -1084,6 +1082,21 @@ a {
         margin: 0;
     }
 
+    /* recommend sec */
+
+    .recommend-white-card {
+        padding: 60px 20px;
+    }
+
+    .recommend-box {
+        padding: 40px 40px;
+    }
+
+    .check-list p {
+        font-size: 20px;
+    }
+
+
     /* review-sec */
     .review-title {
         font-size: 24px;
@@ -1103,7 +1116,7 @@ a {
     .swiper-button-prev {
         display: none;
     }
-    
+
 
     /* doc sec */
     .doc-sec {
@@ -1184,12 +1197,32 @@ a {
         padding-left: 30px;
     }
 
+    /* recommend sec */
+    .recommend-box {
+        padding: 40px 20px;
+    }
+
+    .check-icon{
+        margin-right: 10px;
+    }
+
+    .check-list p {
+        font-size: 16px;
+    }
+
+    .recommend-title {
+        font-size: 28px;
+        /* margin-bottom: 20px; */
+    }
+
 }
+
 /* 일반 모바일 (414px) */
 @media (max-width: 414px) {
-    .only414{
+    .only414 {
         display: block;
     }
+
     .mo-title {
         font-size: 40px;
         letter-spacing: -0.05em;
@@ -1204,5 +1237,21 @@ a {
         padding: 12px 28px;
         font-size: 16px;
         width: auto;
+    }
+
+    /* recommend sec */
+    .recommend-title{
+        font-size: 26px;
+    }
+
+    .recommend-box{
+        padding: 40px 15px;
+    }
+
+
+
+    .check-icon{
+        width: 20px;
+        height: 20px;
     }
 }
