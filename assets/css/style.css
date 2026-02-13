@@ -326,6 +326,7 @@ a {
 /* 정보 섹션 */
 .info-sec {
     width: 100%;
+    min-height: 80vh;
     background: url("../images/bg2.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -416,7 +417,7 @@ a {
 /* 비젼 섹션 */
 .vision-sec {
     width: 100%;
-    height: 450px;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -440,10 +441,12 @@ a {
     opacity: 0.9;
 }
 
-.vision-sub span {
-    margin: 0 10px;
-    font-size: 12px;
-    vertical-align: middle;
+.dot {
+    width: 7px;
+    height: 7px;
+    border: 2px solid var(--white);
+    margin: 5px auto;
+    border-radius: 50%;
 }
 
 .vision-line {
@@ -776,13 +779,12 @@ a {
 .doc-bg {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background-image: url('../images/bg5.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
     z-index: 1;
 }
 
@@ -851,6 +853,7 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    padding-top: 100px;
 }
 
 .doctor-img {
@@ -1080,6 +1083,10 @@ a {
 
     .icon-box {
         margin: 0;
+    }
+
+    .card-text{
+        text-align: left;
     }
 
     /* recommend sec */
