@@ -1,64 +1,32 @@
-// var swiper = new Swiper(".reviewSwiper", {
-//     slidesPerView: 1.2,      // 모바일에서 옆 카드가 살짝 보이게
-//     spaceBetween: 20,       // 카드 간 간격
-//     centeredSlides: true,   // 모바일 센터 정렬
-//     loop: true,             // 무한 반복
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-//     breakpoints: {
-//         // 768px 이상 (태블릿)
-//         768: {
-//             slidesPerView: 2,
-//             centeredSlides: false,
-//         },
-//         // 1024px 이상 (노트북)
-//         1024: {
-//             slidesPerView: 3,
-//             centeredSlides: false,
-//         },
-//         // 1400px 이상 (데스크탑)
-//         1400: {
-//             slidesPerView: 4,
-//             centeredSlides: false,
-//             spaceBetween: 25,
-//         }
-//     }
-// });
-
 
 var swiper = new Swiper(".reviewSwiper", {
-    slidesPerView: 1.2,      // 모바일 기본
+    slidesPerView: 1,
     spaceBetween: 20,
-    centeredSlides: true,    // 모바일은 센터 정렬
-    loop: true,              // 무한 반복
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+    loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     breakpoints: {
-        768: {
-            slidesPerView: 2,
-            centeredSlides: false,
+        640: {
+            slidesPerView: 2.5,
             spaceBetween: 20,
         },
-        1024: {
-            slidesPerView: 3,
-            centeredSlides: false,
-            spaceBetween: 25,
+        768: {
+            slidesPerView: 3.5,
         },
-        1400: {
-            slidesPerView: 4,      // PC에서 카드 4개 노출
-            centeredSlides: false,
+        1024: {
+            slidesPerView: 4.3,
             spaceBetween: 30,
-        }
-    }
+        },
+    },
 });
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('bookingModal');
