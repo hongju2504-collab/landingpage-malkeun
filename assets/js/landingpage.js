@@ -12,14 +12,18 @@ var swiper = new Swiper(".reviewSwiper", {
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        640: {
-            slidesPerView: 2.5,
+        
+        500: {
+            slidesPerView: 1.7,
+        },
+        750: {
+            slidesPerView: 2.7,
             spaceBetween: 20,
         },
-        768: {
+        950: {
             slidesPerView: 3.5,
         },
-        1024: {
+        1200: {
             slidesPerView: 4.3,
             spaceBetween: 30,
         },
