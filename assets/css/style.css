@@ -42,6 +42,10 @@ a {
     display: none;
 }
 
+.d-540{
+    display: none;
+}
+
 
 /* 변수 선언 */
 :root {
@@ -67,6 +71,7 @@ a {
 .d-flex {
     display: flex;
 }
+
 
 
 /* 예약 팝업 */
@@ -252,12 +257,12 @@ a {
     background: url('../images/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
 }
 
 .kv-sec .container {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -614,7 +619,7 @@ a {
 /* 화살표 버튼 커스텀 */
 .swiper-button-next,
 .swiper-button-prev {
-    color: var(--medical-blue);
+    color: var(--soft-charcoal);
     top: 60%;
     width: 40px;
     height: 40px;
@@ -992,9 +997,9 @@ a {
     /* kv sec */
     
 
-    .kv-info {
+    /* .kv-info {
         display: none;
-    }
+    } */
 
     .mo-title {
         display: block;
@@ -1011,6 +1016,13 @@ a {
 
     .kv-btn {
         margin-top: 30px;
+    }
+    
+    .kv-contents{
+        margin-top: 200px;
+    }
+    .kv-sec .container{
+        padding-left: 50px;
     }
 
     /* info sec */
@@ -1083,7 +1095,11 @@ a {
     /* doc sec */
     .doc-sec {
         height: auto;
-        padding: 60px 0 0;
+        padding: 100px 0 0;
+    }
+    .doc-bg{
+        background-image: none;
+        background-color: var(--deep-navy);
     }
 
     .doc-inner {
@@ -1150,6 +1166,10 @@ a {
     .mo-title {
         font-size: 34px;
     }
+    
+    .d-540{
+        display: block;
+    }
 
     /* KV sec */
     .kv-sec {
@@ -1157,6 +1177,7 @@ a {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        height: 85vh;
     }
 
     .kv-sec .container {
@@ -1200,14 +1221,12 @@ a {
     }
 
     /* KV sec */
-    .kv-title {
-        font-size: 20px;
-    }
 
     .kv-btn {
         padding: 12px 28px;
         font-size: 16px;
         width: auto;
+        margin-top: 15px;
     }
 
     /* recommend sec */
