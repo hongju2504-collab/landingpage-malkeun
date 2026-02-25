@@ -10,6 +10,8 @@ body {
     overflow-x: hidden;
     /* 가로 스크롤 강제 방지 */
     position: relative;
+    background-color: var(--deep-navy);
+    color: var(--white);
 }
 
 img {
@@ -772,7 +774,7 @@ a {
 }
 
 .doc-title {
-    font-size: 52px;
+    font-size: 46px;
     line-height: 1.2;
     font-weight: 400;
     margin-bottom: 40px;
@@ -921,6 +923,30 @@ a {
 .mo-title {
     display: none;
 }
+
+
+/* --- 애니메이션 효과를 위한 초기 상태 --- */
+.element {
+    opacity: 0;
+    transform: translateY(50px); /* 50px 아래에서 대기 */
+    transition: all 0.8s ease-out; /* 0.8초 동안 부드럽게 */
+    transition-delay: 0.1s; /* 살짝 박자를 늦춤 */
+}
+
+/* 화면에 나타났을 때 적용될 클래스 */
+.element.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* (선택) 왼쪽에서 나타나는 효과 등 변형 가능 */
+.element.left-in {
+    transform: translateX(-50px);
+}
+.element.left-in.active {
+    transform: translateX(0);
+}
+
 
 /* 데스크탑 (1680px) */
 @media (max-width: 1680px) {
